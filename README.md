@@ -3,7 +3,7 @@
 Statische Begleitseite (Handout) zum Workshop auf der Jahrestagung Digitale Medienbildung 2026 in Löwenstein, 16.11.2026.
 Kein Build-Schritt, keine Abhängigkeiten, keine externen Ressourcen.
 
-## Struktur
+## Struktur (flach, alle Dateien im selben Ordner)
 
 ```
 index.html          Übersicht: Worum es geht, Ablauf (Orientierung), Themen, Werkzeuge
@@ -14,16 +14,17 @@ anbieter.html       Anbieter im Vergleich (Stand 08.11.2026, mit Quellen)
 recht.html          Datenschutz und rechtlicher Rahmen (inkl. Baden-Württemberg)
 impressum.html      Impressum
 datenschutz.html    Datenschutzerklärung der Website
-css/style.css       Design (Farben aus dem Workshop)
-js/site.js          Menü, "Alle aufklappen", Drucken (kein Tracking)
-fonts/              Carlito (SIL Open Font License, Lizenztext: fonts/OFL-Carlito.txt)
-.nojekyll           Deaktiviert Jekyll auf GitHub Pages
+style.css           Design (Farben aus dem Workshop)
+site.js             Menü, "Alle aufklappen", Drucken (kein Tracking)
+carlito-*.woff2     Schrift Carlito, lokal (Lizenztext: OFL-Carlito.txt)
 ```
+
+Alle Dateien liegen bewusst im selben Ordner, damit der Upload über die GitHub-Weboberfläche ("Add files via upload") ohne Unterordner funktioniert.
 
 ## Veröffentlichen mit GitHub Pages
 
 1. Neues **öffentliches** Repository anlegen (z. B. `zsl-medienbildung-begleitmaterial`). GitHub Pages aus privaten Repositories ist nur in bezahlten Tarifen verfügbar.
-2. Den **Inhalt dieses Ordners** in das Repository legen (Dateien im Wurzelverzeichnis, `.nojekyll` nicht vergessen) und pushen:
+2. Den **Inhalt dieses Ordners** in das Repository legen (alle Dateien im Wurzelverzeichnis). Per Weboberfläche: *Add file → Upload files*, alle Dateien markieren und hochladen. Oder per Git:
    ```
    git init
    git add .

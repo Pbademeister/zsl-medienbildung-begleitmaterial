@@ -9,21 +9,21 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/carlito-latin-400-normal.woff2") format("woff2");
+  src: url("carlito-latin-400-normal.woff2") format("woff2");
 }
 @font-face {
   font-family: "Carlito";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/carlito-latin-400-italic.woff2") format("woff2");
+  src: url("carlito-latin-400-italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Carlito";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/carlito-latin-700-normal.woff2") format("woff2");
+  src: url("carlito-latin-700-normal.woff2") format("woff2");
 }
 
 :root {
