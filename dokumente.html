@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mit eigenen Dokumenten arbeiten – Faktentreue trifft Kreativität</title>
+  <meta name="description" content="Grundlagen, Grounded Generation und Aufgaben mit Gemini Notebook.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a2e49'/%3E%3Crect x='9' y='20' width='14' height='3' fill='%2390c226'/%3E%3C/svg%3E">
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><strong>van Roye</strong><span>Training &amp; Beratung</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="hauptnavigation">Menü</button>
+    <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">
+        <a href="dokumente.html" aria-current="page">Dokumente</a>
+        <a href="medien.html">Medien</a>
+        <a href="gemini.html">Gemini</a>
+        <a href="anbieter.html">Anbieter</a>
+        <a href="recht.html">Datenschutz</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt">
+  <div class="wrap page-head">
+    <p class="crumb"><a href="index.html">← Übersicht</a></p>
+    <h1>Mit eigenen Dokumenten arbeiten</h1>
+    <p class="lead">Antworten, die sich auf hochgeladene Quellen stützen und daran überprüfen lassen, statt auf das, was ein Sprachmodell aus dem Training „weiß“.</p>
+    <div class="acc-controls"></div>
+  </div>
+  <div class="wrap">
+    <details class="acc" id="grundlagen" open>
+      <summary><span>Grundlagen: Wie Antworten entstehen</span></summary>
+      <div class="acc-body">
+        <ul>
+          <li>Sprachmodelle lernen aus großen Datenquellen. Texte werden in kleine Einheiten (Tokens) zerlegt und durch Finetuning verfeinert.</li>
+          <li>Bei der Ausgabe wählt das Modell Wort für Wort nach <strong>Wahrscheinlichkeiten</strong>. Nur was gelernt wurde, kann ausgegeben werden, und die Datenquellen sind nicht nach den eigenen Bedürfnissen gewichtet.</li>
+          <li><strong>Halluzinationen</strong> sind plausibel klingende, aber falsche Antworten. Sie treten besonders auf, wenn wenig Daten zum Thema vorliegen.</li>
+          <li>Drei Stellschrauben beim Arbeiten mit KI: <strong>Modell, Kontext, Prompt</strong>. Je klarer der Prompt und je enger der Kontext, desto besser das Ergebnis.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="acc" id="grounded" open>
+      <summary><span>Kernprinzip: Grounded Generation</span></summary>
+      <div class="acc-body">
+        <p>Beim Gemini Notebook stützt sich die KI auf die Quellen, die selbst hochgeladen werden, und verweist mit Belegstellen darauf. Jede Aussage lässt sich am Original prüfen.</p>
+        <p>Das senkt das Risiko von Halluzinationen deutlich, schließt es aber nicht aus. Die Belegstellen zu öffnen bleibt Teil der Arbeit.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><span>Quellen, Formate und Grenzen</span></summary>
+      <div class="acc-body">
+        <ul>
+          <li><strong>Umfang:</strong> bis zu 50 Quellen mit über 500 Seiten pro Notebook (im kostenlosen Zugang, Stand 08.11.2026).</li>
+          <li><strong>Formate:</strong> PDFs, Google Docs, Websites (URLs), YouTube-Links (Transkripte), Audio-Dateien (MP3/WAV), Bilder und kopierter Text.</li>
+          <li><strong>Ausgaben:</strong> Chat mit Quellenbelegen, FAQ, Zusammenfassung, Tabelle, Glossar, außerdem die Medien im Studio.</li>
+        </ul>
+        <p class="small">Limits und Funktionen ändern sich. Aktuelle Angaben stehen in der Hilfe des Anbieters.</p>
+        <p><a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer">Gemini Notebook öffnen<span aria-hidden="true"> ↗</span><span class="sr-only"> (externe Seite, öffnet in neuem Tab)</span></a></p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><span><span class="tag">Aufgabe 1</span>Mit eigenen Dokumenten arbeiten</span></summary>
+      <div class="acc-body">
+        <ul>
+          <li>Eigene Dokumente nutzen, zum Beispiel Goodnotes-Mitschriften und Arbeitsblätter.</li>
+          <li>Darauf basierend Klassenarbeiten und Tests inklusive Erwartungshorizont erstellen lassen.</li>
+        </ul>
+        <p class="small">Hinweis: keine Dokumente mit personenbezogenen Daten verwenden.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><span><span class="tag">Aufgabe 2</span>Mit Quellen arbeiten</span></summary>
+      <div class="acc-body">
+        <ol>
+          <li>Zwei Notebooks erstellen. Geeignete Quellen sind der Bildungsplan und seine Änderungen, Erlasse und Vorschriften, (wissenschaftliche) Artikel und Medien.</li>
+          <li>Den Chat testen: Werden die Informationen richtig dargestellt?</li>
+          <li>Verschiedene Formate erzeugen: FAQ, Zusammenfassung, Tabelle, Glossar.</li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><span>Ergebnisse prüfen</span></summary>
+      <div class="acc-body">
+        <ul>
+          <li>Belegstelle öffnen und mit der Aussage vergleichen.</li>
+          <li>Gegenfrage stellen: Steht das wirklich in den Quellen?</li>
+          <li>Zahlen, Daten und Fristen immer am Original kontrollieren.</li>
+          <li>Verweist die KI auf nichts, fehlt die Information vermutlich in den Quellen.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><span>Datenschutz im Notebook</span></summary>
+      <div class="acc-body">
+        <ul>
+          <li>Nach Angaben des Anbieters werden hochgeladene Daten nicht zur „Verbesserung“ der Modelle verwendet, Dokumente bleiben privat.</li>
+          <li>Trotzdem gilt: keine personenbezogenen, sensiblen oder geschäftskritischen Daten hochladen.</li>
+          <li>Nicht mehr verwendete Dokumente und Notebooks löschen.</li>
+          <li>Keine Feedback-Optionen nutzen, dabei können Inhalte übermittelt werden.</li>
+          <li><strong>Copyright beachten:</strong> nur Material hochladen, dessen Nutzung erlaubt ist.</li>
+        </ul>
+        <p><a href="recht.html">Mehr zu Datenschutz und rechtlichem Rahmen</a></p>
+      </div>
+    </details>
+  </div>
+  <div class="wrap">
+    <nav class="pager" aria-label="Seitenwechsel">
+      <a class="next" href="medien.html"><small>Weiter</small>Medien erstellen und verwenden</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Workshop-Begleitseite · Jahrestagung Digitale Medienbildung 2026 · Löwenstein<br>van Roye – Training &amp; Beratung</p>
+    <nav class="foot-links" aria-label="Rechtliches">
+      <a href="https://vanroye.de" target="_blank" rel="noopener noreferrer">vanroye.de<span aria-hidden="true"> ↗</span><span class="sr-only"> (externe Seite, öffnet in neuem Tab)</span></a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutzerklärung</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
